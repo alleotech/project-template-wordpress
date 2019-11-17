@@ -1,45 +1,29 @@
 project-template-wordpress
 ==========================
 
-[![Build Status](https://travis-ci.org/QoboLtd/project-template-wordpress.svg?branch=master)](https://travis-ci.org/QoboLtd/project-template-wordpress)
-[![Latest Stable Version](https://poser.pugx.org/qobo/project-template-wordpress/v/stable)](https://packagist.org/packages/qobo/project-template-wordpress)
-[![Total Downloads](https://poser.pugx.org/qobo/project-template-wordpress/downloads)](https://packagist.org/packages/qobo/project-template-wordpress)
-[![Latest Unstable Version](https://poser.pugx.org/qobo/project-template-wordpress/v/unstable)](https://packagist.org/packages/qobo/project-template-wordpress)
-[![License](https://poser.pugx.org/qobo/project-template-wordpress/license)](https://packagist.org/packages/qobo/project-template-wordpress)
+[![Build Status](https://travis-ci.org/alleotech/project-template-wordpress.svg?branch=master)](https://travis-ci.org/alleotech/project-template-wordpress)
+[![License](https://poser.pugx.org/alleotech/project-template-wordpress/license)](https://packagist.org/packages/alleotech/project-template-wordpress)
 
 About
 -----
 
 This is a template for the new WordPress projects.
 
-Developed by [Qobo](https://www.qobo.biz), used in [Qobrix](https://qobrix.com).
+It is developed by [AlleoTech](https://alleo.tech), based on the one developed by [Qobo](https://github.com/QoboLtd/project-template-wordpress).
+It
 
 Install
 -------
 
-There are two ways to install and start using this project template.
-
-### Composer
-
-You can create a new project from this template using composer.
-
-```bash
-composer create-project qobo/project-template-wordpress example.com
-cd example.com
-./bin/build app:install DB_NAME="app",PROJECT_NAME="My Project",PROJECT_VERSION="v1.0.0"
-```
-
-### Git
-
-Alternatively, if you want to be able to update your project to the latest version
-of the template, you can install the template with git.
+There are several ways to install this template and start working on your project.
+We recommend the following:
 
 ```bash
 mkdir example.com
 cd example.com
 git init
-# Pull the latest version from https://github.com/QoboLtd/project-template-wordpress/releases
-git pull git@github.com:QoboLtd/project-template-wordpress.git vX.Y.Z
+# Pull the latest version from https://github.com/alleotech/project-template-wordpress/releases
+git pull https://github.com/alleotech/project-template-wordpress.git vX.Y.Z
 composer update
 ./bin/build app:install DB_NAME="app",PROJECT_NAME="My Project",PROJECT_VERSION="v1.0.0"
 # Add your own remote repository
@@ -54,7 +38,7 @@ do your own development now, and upgrade to the latest template at any point in 
 Update
 ------
 
-If you installed the project template using git, you can easily
+If you installed the project template using the above method, you can easily
 upgrade your application to the latest template with the following:
 
 ```bash
@@ -64,8 +48,8 @@ git checkout master
 git pull origin master
 # Create a new branch
 git checkout -b project-template-update
-# Pull the latest version from https://github.com/QoboLtd/project-template-wordpress/releases
-git pull git@github.com:QoboLtd/project-template-wordpress.git vX.Y.Z
+# Pull the latest version from https://github.com/alleotech/project-template-wordpress/releases
+git pull https://github.com/alleotech/project-template-wordpress.git vX.Y.Z
 composer update
 ./bin/build app:update
 # Check for conflicts, resolve if any, commit, and then push

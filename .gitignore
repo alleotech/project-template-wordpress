@@ -17,7 +17,7 @@ webroot/wp/
 webroot/wp-content/*
 !webroot/wp-content/uploads
 webroot/wp-content/uploads/*
-!webroot/wp-content/uploads/qobo
+!webroot/wp-content/uploads/cmsdev
 
 # OS generated files #
 ######################

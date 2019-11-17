@@ -32,9 +32,6 @@ $footer_nav = [
 				</nav>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-xs-1"><?php the_widget( 'QBDEVBY_Widget' ); ?></div>
-		</div>
 	</div>
 </footer>
 

@@ -10,7 +10,7 @@ $config = [
 ];
 
 $app = new \Qobo\Robo\App();
-$statusCode = $app->name("Qobo Robo Project Builder")
+$statusCode = $app->name("AlleoTech Robo Project Builder")
     ->version("v1.0.0")
     ->args($_SERVER['argv'])
     ->config($config)
