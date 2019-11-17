@@ -5,7 +5,7 @@
  * This template is now based on Bootstrap starter template
  * More info: http://getbootstrap.com/examples/jumbotron/
  *
- * @package Qobo Generic Wordpress Theme
+ * @package Qobo Generic WordPress Theme
  */
 
 $header_nav = [
@@ -38,7 +38,7 @@ $header_nav = [
 				<div class="row">
 					<div class="col-xs-10 col-sm-10 col-md-10 col-lg-3">
 						<div class="navbar-logo text-center">
-							<a href="<?php bloginfo( 'url' )?>">
+							<a href="<?php bloginfo( 'url' ); ?>">
 								<img class="img-thumbnail" width="100" alt="Logo Image" src="<?php echo esc_attr( get_stylesheet_directory_uri() ); ?>/images/logo.png">
 							</a>
 						</div>
@@ -55,7 +55,7 @@ $header_nav = [
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-9 no-padding">
 						<div id="navbar" class="collapse navbar-collapse navbar-center">
-							<?php wp_nav_menu( $header_nav );	?>
+							<?php wp_nav_menu( $header_nav ); ?>
 						</div>
 					</div>
 				</div>

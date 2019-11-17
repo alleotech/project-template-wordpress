@@ -6,7 +6,7 @@
  * This template is now based on Bootstrap starter template
  * More info: http://getbootstrap.com/examples/jumbotron/
  *
- * @package Qobo Generic Wordpress Theme
+ * @package Qobo Generic WordPress Theme
  */
 
 get_header();

@@ -108,8 +108,6 @@ $WPCLI option update jr_resizeupload_recompress_yesno 'no'
 $WPCLI option update jr_resizeupload_convertbmp_yesno 'no'
 $WPCLI option update jr_resizeupload_convertpng_yesno 'no'
 $WPCLI option update jr_resizeupload_convertgif_yesno 'no'
-# Developed by
-$WPCLI option update qbdevby_settings '{"title":"", "text":"", "text_style":"", "style":"text-align:center;", "light_colour_icon":"", "link":"https://alleo.tech", "footer":""}' --format=json
 # Compress PNG for WP (Using TinyPNG API)
 $WPCLI option update gd_tiny_png_key '%%TINYPNG_API_KEY%%'
 # Available options for vanilla WP are - large, medium, thumbnail
