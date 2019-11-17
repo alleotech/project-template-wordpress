@@ -55,7 +55,7 @@ function get_images_by_gategory_slug( string $slug, int $no_of_images = 1 ) {
 add_action( 'init', 'disable_upload_files_for_wp_dev_user' );
 
 /**
- * Disable upload functionality for the qobo user
+ * Disable upload functionality for the dev user
  */
 function disable_upload_files_for_wp_dev_user() : void {
 
