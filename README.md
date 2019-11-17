@@ -2,7 +2,6 @@ project-template-wordpress
 ==========================
 
 [![Build Status](https://travis-ci.org/alleotech/project-template-wordpress.svg?branch=master)](https://travis-ci.org/alleotech/project-template-wordpress)
-[![License](https://poser.pugx.org/alleotech/project-template-wordpress/license)](https://packagist.org/packages/alleotech/project-template-wordpress)
 
 About
 -----
@@ -10,7 +9,6 @@ About
 This is a template for the new WordPress projects.
 
 It is developed by [AlleoTech](https://alleo.tech), based on the one developed by [Qobo](https://github.com/QoboLtd/project-template-wordpress).
-It
 
 Install
 -------
