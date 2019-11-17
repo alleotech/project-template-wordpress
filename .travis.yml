@@ -12,7 +12,6 @@ matrix:
   fast_finish: true
 
   allow_failures:
-    - php: 7.3
     - php: nightly
 
   include:
@@ -46,6 +45,3 @@ script:
   - if [[ $COVERAGE = 1 ]]; then ./vendor/bin/phpunit --exclude-group example; fi
   - if [[ $PHPSTAN = 1 ]]; then ./vendor/bin/phpstan analyse; fi
 
-notifications:
-  email:
-    - webdev@qobocloud.com
