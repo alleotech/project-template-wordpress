@@ -41,9 +41,9 @@ function register_child_theme_textdomains() : void {
 add_action( 'init', 'register_child_theme_textdomains' );
 
 /**
- * Change default locate
+ * Change default locale
  *
- * @param string $locale Wordpress default locate.
+ * @param string $locale WordPress default locale.
  * @return string $locale
  */
 function wpsx_redefine_locale( string $locale ) : string {
