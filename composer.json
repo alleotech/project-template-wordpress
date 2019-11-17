@@ -1,21 +1,21 @@
 {
-    "name": "qobo/project-template-wordpress",
+    "name": "alleotech/project-template-wordpress",
     "description": "Template for new WordPress projects",
     "keywords": ["wordpress", "project", "template", "setup", "rapid-development", "dry"],
     "type": "project",
     "license": "MIT",
-    "homepage": "https://www.qobo.biz",
+    "homepage": "https://alleo.tech",
     "authors": [
         {
-            "name": "Qobo Ltd",
-            "email": "support@qobo.biz",
-            "homepage": "https://www.qobo.biz",
+            "name": "AlleoTech Ltd",
+            "email": "hello@alleo.tech",
+            "homepage": "https://alleo.tech",
             "role": "Developer"
         }
     ],
     "support": {
-        "issues": "https://github.com/QoboLtd/project-template-wordpress/issues",
-        "source": "https://github.com/QoboLtd/project-template-wordpress"
+        "issues": "https://github.com/alleotech/project-template-wordpress/issues",
+        "source": "https://github.com/alleotech/project-template-wordpress"
     },
     "config": {
         "secure-http": false,
@@ -88,7 +88,6 @@
         "wp-coding-standards/wpcs": "0.11.0"
     },
     "suggest": {
-        "qobo/qobo-wp-custom-admin-theme": "it fixes WP admin styles where widget input, select overlap their container",
         "wpackagist-plugin/regenerate-thumbnails": "Regenerate Thumbnails allows you to regenerate the thumbnails for your image attachments.",
         "ext-xdebug": "Allows code coverage reports and advanced debugging"
     },
