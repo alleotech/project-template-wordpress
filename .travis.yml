@@ -16,9 +16,9 @@ matrix:
 
   include:
     - php: 7.3
-      env: PHPCS=1 COVERAGE=1 PHPSTAN=0
+      env: PHPCS=1 COVERAGE=1 PHPSTAN=1
     - php: nightly
-      env: PHPCS=1 COVERAGE=0 PHPSTAN=0
+      env: PHPCS=1 COVERAGE=0 PHPSTAN=1
 
 install:
   - ./bin/phpserv >/dev/null 2>&1 &
