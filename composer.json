@@ -33,12 +33,10 @@
     ],
     "require": {
         "aws/aws-sdk-php": "^3.52",
-        "brainmaestro/composer-git-hooks": "^2.4",
         "fancyguy/webroot-installer": "1.1.0",
         "johnpbloch/wordpress-core": "5.4.0",
         "johnpbloch/wordpress-core-installer": "2.0.0",
         "josegonzalez/dotenv": "^3.2",
-        "pyrech/composer-changelogs": "^1.4",
         "qobo/qobo-robo": "^2.0",
         "qobo/qobo-wp-generic-theme": "1.1.3",
         "wp-cli/wp-cli": "^1.1",
@@ -72,12 +70,14 @@
         "wpackagist-plugin/wp-theme-plugin-editor-disable": "1.0.0"
     },
     "require-dev": {
+        "brainmaestro/composer-git-hooks": "*",
         "brianium/paratest": "*",
         "phpstan/extension-installer": "*",
         "phpstan/phpstan": "*",
         "phpstan/phpstan-deprecation-rules": "*",
         "phpstan/phpstan-phpunit": "*",
         "phpunit/phpunit": "*",
+        "pyrech/composer-changelogs": "*",
         "squizlabs/php_codesniffer": "*",
         "thecodingmachine/phpstan-strict-rules": "*",
         "wp-coding-standards/wpcs": "*",
