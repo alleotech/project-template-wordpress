@@ -75,6 +75,7 @@
         "brianium/paratest": "*",
         "phpstan/extension-installer": "*",
         "phpstan/phpstan": "*",
+        "phpstan/phpstan-deprecation-rules": "*",
         "phpstan/phpstan-phpunit": "*",
         "phpunit/phpunit": "*",
         "squizlabs/php_codesniffer": "*",
