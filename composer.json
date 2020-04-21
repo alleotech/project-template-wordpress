@@ -104,18 +104,20 @@
     "scripts": {
         "test": [
             "phpcs",
-            "phpunit --no-coverage"
+            "phpstan analyse",
+            "phpunit --colors=always --no-coverage"
         ],
         "test-coverage": [
             "phpcs",
-            "phpunit"
+            "phpstan analyse",
+            "phpunit --colors=always"
         ],
         "post-install-cmd": "cghooks add",
         "post-update-cmd": "cghooks update"
     },
     "scripts-descriptions": {
-        "test": "Runs phpcs and phpunit without coverage",
-        "test-coverage": "Runs phpcs and phpunit with coverage enabled"
+        "test": "Runs phpcs, phpstan and phpunit without coverage",
+        "test-coverage": "Runs phpcs, phpstan and phpunit with coverage enabled"
     },
     "extra": {
         "hooks": {
