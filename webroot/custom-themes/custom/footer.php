@@ -8,18 +8,16 @@
  * @package Qobo Generic WordPress Theme
  */
 
-$footer_nav = [
-	'theme_location' => 'footer-menu',
-	'menu' => 'Footer Menu',
-	'container' => '',
+$footer_nav = array(
+	'theme_location'  => 'footer-menu',
+	'menu'            => 'Footer Menu',
+	'container'       => '',
 	'container_class' => '',
-	'menu_class' =>
-	'nav navbar-nav ',
-	'depth' => 0,
-	'fallback_cb' =>
-	'qobogt_wp_bootstrap_navwalker::fallback',
-	'walker' => new qobogt_wp_bootstrap_navwalker(),
-];
+	'menu_class'      => 'nav navbar-nav ',
+	'depth'           => 0,
+	'fallback_cb'     => 'qobogt_wp_bootstrap_navwalker::fallback',
+	'walker'          => new qobogt_wp_bootstrap_navwalker(),
+);
 
 ?>
 

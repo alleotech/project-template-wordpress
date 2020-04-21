@@ -35,7 +35,7 @@ function load_includes( string $dir ) : void {
 	$it = new RegexIterator( $it, '#.php$#' );
 	foreach ( $it as $include ) {
 		if ( $include->isReadable() ) {
-			require_once( $include->getPathname() );
+			require_once $include->getPathname();
 		}
 	}
 }

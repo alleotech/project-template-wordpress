@@ -31,8 +31,11 @@ add_action( 'wp', 'redirect_non_logged_users_to_login_page' );
  * @return \WP_Post[]|false Object $result.
  */
 function get_images_by_gategory_slug( string $slug, int $no_of_images = 1 ) {
-
-	/** @var \WP_Term|false Category */
+	/**
+	 * Category
+	 *
+	 * @var \WP_Term|false
+	 */
 	$category = get_category_by_slug( $slug );
 
 	if ( ! $category ) {
@@ -48,7 +51,11 @@ function get_images_by_gategory_slug( string $slug, int $no_of_images = 1 ) {
 		'category'    => $category_id,
 	);
 
-	/** @var \WP_Post[] Category posts */
+	/**
+	 * Category posts
+	 *
+	 * @var \WP_Post[]
+	 */
 	$result = get_posts( $args );
 
 	return $result;

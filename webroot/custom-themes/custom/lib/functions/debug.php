@@ -19,7 +19,11 @@ function debug( $var ) : void {
 		return;
 	}
 
-	/** @var bool */
+	/**
+	 * Debug flag
+	 *
+	 * @var bool
+	 */
 	$debug = WP_DEBUG;
 
 	if ( $debug ) {

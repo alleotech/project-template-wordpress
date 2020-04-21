@@ -69,7 +69,7 @@ add_action( 'init', 'disable_wp_emojicons' );
  * @return string[] array of filtered out plugins.
  */
 function disable_emojicons_tinymce( array $plugins ) : array {
-	return array_diff( $plugins, [ 'wpemoji' ] );
+	return array_diff( $plugins, array( 'wpemoji' ) );
 }
 
 /**
