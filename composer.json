@@ -79,12 +79,12 @@
         "phpunit/phpunit": "*",
         "squizlabs/php_codesniffer": "*",
         "thecodingmachine/phpstan-strict-rules": "*",
-        "wpackagist-plugin/theme-check": "*",
+        "wp-coding-standards/wpcs": "*",
         "wpackagist-plugin/debug-bar": "1.0",
         "wpackagist-plugin/debug-bar-console": "0.3",
         "wpackagist-plugin/p3-profiler": "1.5.3.9",
-        "wpackagist-plugin/user-switching": "1.5.4",
-        "wp-coding-standards/wpcs": "0.12.0"
+        "wpackagist-plugin/theme-check": "*",
+        "wpackagist-plugin/user-switching": "1.5.4"
     },
     "suggest": {
         "wpackagist-plugin/regenerate-thumbnails": "Regenerate Thumbnails allows you to regenerate the thumbnails for your image attachments.",
