@@ -15,7 +15,14 @@
  * @return void
  */
 function debug( $var ) : void {
-	if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
+	if ( ! defined( 'WP_DEBUG' ) ) {
+		return;
+	}
+
+	/** @var bool */
+	$debug = WP_DEBUG;
+
+	if ( $debug ) {
 		echo '<pre>';
 		// @codingStandardsIgnoreStart
 		print_r( $var );

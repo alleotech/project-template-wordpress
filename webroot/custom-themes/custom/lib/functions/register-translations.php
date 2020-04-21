@@ -47,9 +47,9 @@ add_action( 'init', 'register_child_theme_textdomains' );
  * @return string $locale
  */
 function wpsx_redefine_locale( string $locale ) : string {
-
-	if ( isset( $_GET['lang'] ) ) {
-		return esc_attr( $_GET['lang'] );
+	$language = filter_input( INPUT_GET, 'lang' );
+	if ( is_string( $language ) ) {
+		return esc_attr( $language );
 	}
 	return $locale;
 
