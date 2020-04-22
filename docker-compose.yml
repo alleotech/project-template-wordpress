@@ -52,6 +52,7 @@ services:
       && echo $PRIV_KEY | base64 -d -i > ~/.ssh/id_rsa
       && chmod -R u+rwX,go-rwX ~/.ssh
       && cd /code
+      && ./bin/composer global require hirak/prestissimo --no-plugins --no-scripts
       && ./bin/composer validate
       && ./bin/composer install --no-progress --no-suggest
       && ./vendor/bin/phpcs
