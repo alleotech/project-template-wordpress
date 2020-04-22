@@ -57,6 +57,7 @@ services:
       && ./bin/composer install --no-progress --no-suggest
       && ./vendor/bin/phpcs
       && ./bin/build app:install CHOWN_USER=root,CHGRP_GROUP=root,DB_HOST=mysql,DB_NAME=app,DB_ADMIN_USER=root,DB_ADMIN_PASS=root,DB_USER=root,DB_PASS=root
+      && ./vendor/bin/phpstan analyse --memory-limit=-1
       && ./vendor/bin/phpunit --group example --no-coverage
       && ./vendor/bin/phpunit --exclude-group example,external --no-coverage"
     depends_on:
