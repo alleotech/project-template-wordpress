@@ -8,17 +8,15 @@
  * @package Qobo Generic WordPress Theme
  */
 
-$header_nav = [
-	'menu' => 'Header',
-	'container' => '',
+$header_nav = array(
+	'menu'            => 'Header',
+	'container'       => '',
 	'container_class' => '',
-	'menu_class' =>
-	'nav navbar-nav ',
-	'depth' => 0,
-	'fallback_cb' =>
-	'qobogt_wp_bootstrap_navwalker::fallback',
-	'walker' => new qobogt_wp_bootstrap_navwalker(),
-];
+	'menu_class'      => 'nav navbar-nav ',
+	'depth'           => 0,
+	'fallback_cb'     => 'qobogt_wp_bootstrap_navwalker::fallback',
+	'walker'          => new qobogt_wp_bootstrap_navwalker(),
+);
 
 ?>
 <!DOCTYPE html>
@@ -46,7 +44,7 @@ $header_nav = [
 					<div class="col-xs-2 col-sm-2 col-md-2">
 						<div class="navbar-header">
 							<button class="navbar-toggle">
-							 <span class="sr-only">Toggle navigation</span>
+							<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>

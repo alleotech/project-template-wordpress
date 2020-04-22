@@ -26,6 +26,8 @@
     <!-- Assume UTF-8 -->
     <config name="encoding" value="UTF-8" />
 
+    <arg name="basepath" value="."/>
+
     <!-- Use colors -->
     <arg name="colors" />
 
@@ -35,11 +37,7 @@
     <!-- Files and directories to check -->
     <file>./src/</file>
     <file>./webroot/custom-themes/</file>
-    <arg name="ignore" value="webroot/custom-themes/custom/includes/bootstrap/" />
-    <arg name="ignore" value="webroot/custom-themes/custom/includes/font-awesome/" />
-    <arg name="ignore" value="webroot/custom-themes/custom/includes/jquery/" />
-    <arg name="ignore" value="webroot/custom-themes/custom/includes/jquery-ui/" />
-    <arg name="ignore" value="webroot/custom-themes/custom/includes/smoke/" />
+    <exclude-pattern>webroot/custom-themes/custom/includes/</exclude-pattern>
 
     <!-- Ignore minified files -->
     <exclude-pattern>*\.min\.(css|js)</exclude-pattern>

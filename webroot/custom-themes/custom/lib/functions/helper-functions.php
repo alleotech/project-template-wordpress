@@ -28,10 +28,14 @@ add_action( 'wp', 'redirect_non_logged_users_to_login_page' );
  *
  * @param string $slug Slug name of a category image group.
  * @param int    $no_of_images Number of images filter.
- * @return \WP_Post|bool Object $result.
+ * @return \WP_Post[]|false Object $result.
  */
 function get_images_by_gategory_slug( string $slug, int $no_of_images = 1 ) {
-
+	/**
+	 * Category
+	 *
+	 * @var \WP_Term|false
+	 */
 	$category = get_category_by_slug( $slug );
 
 	if ( ! $category ) {
@@ -47,6 +51,11 @@ function get_images_by_gategory_slug( string $slug, int $no_of_images = 1 ) {
 		'category'    => $category_id,
 	);
 
+	/**
+	 * Category posts
+	 *
+	 * @var \WP_Post[]
+	 */
 	$result = get_posts( $args );
 
 	return $result;
@@ -72,7 +81,15 @@ function disable_upload_files_for_wp_dev_user() : void {
 	if ( getenv( 'WP_DEV_USER' ) === $user->user_login ) {
 		remove_post_type_thumbnail();
 		add_action( 'admin_menu', 'remove_menu_links' );
-		remove_action( 'media_buttons', 'media_buttons' );
+		/**
+		 * Callable name
+		 *
+		 * @var string
+		 */
+		$func = 'media_buttons';
+		if ( is_callable( $func ) ) {
+			remove_action( 'media_buttons', $func );
+		}
 		add_action( 'admin_notices', 'image_upload_notice' );
 	}
 }

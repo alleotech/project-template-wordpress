@@ -8,8 +8,9 @@ use PHPUnit\Framework\TestCase;
  */
 class RobotsTest extends TestCase
 {
-
+    /** @var string */
     protected $folder;
+    /** @var string */
     protected $file;
 
     protected function setUp(): void

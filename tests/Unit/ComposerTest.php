@@ -13,6 +13,7 @@ class ComposerTest extends TestCase
     const COMPOSER_JSON = 'composer.json';
     const COMPOSER_LOCK = 'composer.lock';
 
+    /** @var string */
     protected $folder;
 
     protected function setUp(): void

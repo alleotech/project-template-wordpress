@@ -15,9 +15,9 @@ define( 'THEME_LANG_PATH', dirname( dirname( dirname( __DIR__ ) ) ) . DIRECTORY_
  */
 function register_textdomain( string $path ) : void {
 
-	$text_domains = [ 'custom-theme' ];
+	$text_domains = array( 'custom-theme' );
 	foreach ( $text_domains as $domain ) {
-		load_child_theme_textdomain( $domain , $path );
+		load_child_theme_textdomain( $domain, $path );
 	}
 }
 
@@ -47,11 +47,11 @@ add_action( 'init', 'register_child_theme_textdomains' );
  * @return string $locale
  */
 function wpsx_redefine_locale( string $locale ) : string {
-
-	if ( isset( $_GET['lang'] ) ) {
-		return esc_attr( $_GET['lang'] );
+	$language = filter_input( INPUT_GET, 'lang' );
+	if ( is_string( $language ) ) {
+		return esc_attr( $language );
 	}
 	return $locale;
 
 }
-add_filter( 'locale','wpsx_redefine_locale',10 );
+add_filter( 'locale', 'wpsx_redefine_locale', 10 );
