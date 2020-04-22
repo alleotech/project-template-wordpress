@@ -24,6 +24,7 @@ matrix:
 
 install:
   - ./bin/phpserv >/dev/null 2>&1 &
+  - ./bin/composer global require hirak/prestissimo --no-plugins --no-scripts
   - ./bin/composer validate
   - ./bin/composer install --no-interaction --no-progress --no-suggest
   - mkdir -p build/test-coverage build/test-results
