@@ -6,7 +6,7 @@ services:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=app
   app:
-    image: qoboltd/docker-centos-nginx:${PHP_VERSION-latest}
+    image: alleotech/nginx-php:${PHP_VERSION}
     environment:
       - COMPOSER_ALLOW_SUPERUSER=1
       - COMPOSER_NO_INTERACTION=1
@@ -33,7 +33,7 @@ services:
     depends_on:
       - mysql
   test:
-    image: qoboltd/docker-centos-php:${PHP_VERSION-latest}
+    image: alleotech/php-fpm:${PHP_VERSION}
     environment:
       - COMPOSER_ALLOW_SUPERUSER=1
       - COMPOSER_NO_INTERACTION=1
