@@ -3,7 +3,7 @@ pipelines:
   default:
     - parallel:
       - step:
-          name: PHP 7.2
+          name: PHP 7.4
           caches:
             - docker
             - composer
@@ -16,12 +16,12 @@ pipelines:
             - chmod -R 777 $BITBUCKET_CLONE_DIR
             - docker-compose -v
             - export PRIV_KEY=$MY_SSH_KEY
-            - export PHP_VERSION=7.2
+            - export PHP_VERSION=7.4
             - docker-compose up --abort-on-container-exit --exit-code-from test test
             - docker-compose down
             - rsync -avg ./build/composer/ ~/.composer/
       - step:
-          name: PHP 7.1
+          name: PHP 7.3
           caches:
             - docker
             - composer
@@ -34,7 +34,7 @@ pipelines:
             - chmod -R 777 $BITBUCKET_CLONE_DIR
             - docker-compose -v
             - export PRIV_KEY=$MY_SSH_KEY
-            - export PHP_VERSION=7.1
+            - export PHP_VERSION=7.3
             - docker-compose up --abort-on-container-exit --exit-code-from test test
             - docker-compose down
             - rsync -avg ./build/composer/ ~/.composer/
