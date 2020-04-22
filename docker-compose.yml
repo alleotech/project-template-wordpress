@@ -48,6 +48,7 @@ services:
       && mysql -h mysql -u root -proot -e 'drop database if exists app'
       && echo 'Check PHP Version'
       && php --version
+      && mkdir ~/.ssh
       && echo $PRIV_KEY | base64 -d -i > ~/.ssh/id_rsa
       && chmod -R u+rwX,go-rwX ~/.ssh
       && cd /code
